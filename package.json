@@ -1,0 +1,19 @@
+{
+  "name": "convo-cump-bridge",
+  "version": "0.1.0",
+  "description": "Bridgeport bridge for Convo CUMP",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/p2ppsr/convo-cump-bridge.git"
+  },
+  "author": "Peer-to-peer Privacy Systems Research, LLC",
+  "license": "Open BSV License",
+  "bugs": {
+    "url": "https://github.com/p2ppsr/convo-cump-bridge/issues"
+  },
+  "homepage": "https://github.com/p2ppsr/convo-cump-bridge#readme",
+  "devDependencies": {
+    "standard": "^14.3.4"
+  }
+}
