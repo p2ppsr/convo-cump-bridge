@@ -1,27 +1,3 @@
-module.exports = {
-  bridgeport: '0.0.1',
-  name: 'Convo User Messages Protocol',
-  description: 'Find messages from the Convo Messenger application',
-  version: '0.1.0',
-  routes: [],
-  requestTransformer: x => x,
-  responseTransformer: x => x,
-  defaultQuery: JSON.stringify({
-    v: 3,
-    q: {
-      collection: 'messages',
-      find: {},
-      project: { sender: 1 },
-      limit: 10
-    }
-  }, null, 2),
-  defaultSocket: JSON.stringify({
-    v: 3,
-    q: {
-      find: {}
-    }
-  }, null, 2),
-  readme: `
 # Convo User Messages Protocol
 
 This document describes the blockchain protocol for dealing with messages
@@ -88,8 +64,4 @@ When the message type is \`secret-photo\`, the content field will be an HTTP or 
 
 ## Implementation
 
-This protocol has been implemented into a finite state machine using Bridgeport. The bus and bridge configurations can be found here:
-- [Convo CUMP Bus](https://github.com/p2ppsr/convo-cump-bus)
-- [Convo CUMP Bridge](https://github.com/p2ppsr/convo-cump-bridge)
-`
-}
+This protocol has been [implemented](https://github.com/p2ppsr/convo-cump-bridge) into a finite state machine using [Bridgeport](https://bridgeport.babbage.systems).

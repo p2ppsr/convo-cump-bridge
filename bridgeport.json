@@ -1,0 +1,25 @@
+{
+  "bridgeport": "0.2.0",
+  "id": "1C3XB5JogptMF4MdU6B3VviniqYzHzzDzf",
+  "name": "Convo User Messages Protocol",
+  "description": "Find messages from the Convo Messenger application",
+  "version": "1.0.0",
+  "repoToken": "CmzMUklCUbCMpNX9",
+  "reader": {
+    "runtime": "nodejs14",
+    "directory": "./reader"
+  },
+  "transformer": {
+    "runtime": "nodejs14",
+    "directory": "./transformer"
+  },
+  "filter": {
+    "startingBlockHeight": 676000,
+    "find": {
+      "out.i": 0,
+      "out.o0": "OP_0",
+      "out.o1": "OP_RETURN",
+      "out.s2": "1CUMP5cMD9UJSARBvdVEsn8GndRN7dV8Sh"
+    }
+  }
+}
