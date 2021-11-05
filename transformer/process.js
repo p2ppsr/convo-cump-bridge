@@ -1,3 +1,5 @@
+const bsv = require('bsv')
+
 module.exports = async (state, action) => {
   try {
     console.log(`[+] ${action.tx.h}`)
