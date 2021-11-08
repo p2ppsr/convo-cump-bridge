@@ -1,5 +1,8 @@
 # Convo User Messages Protocol
 
+- [Query](./query)
+- [Socket](./socket)
+
 This document describes the blockchain protocol for dealing with messages
 
 ## Requisite Data
