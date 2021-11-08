@@ -1,12 +1,18 @@
-module.exports = async (state, txid) => {
+module.exports = async (state, action) => {
   try {
-    console.log(`[-] ${txid}`)
+    console.log(`[-] ${action.tx.h}`)
     await state.delete({
-        collection: 'messages',
-        find: { _id: txid }
+      collection: 'messages',
+      find: { _id: action.tx.h }
+    })
+    if (action.live) {
+      await state.delete({
+        collection: 'bridgeport_events',
+        find: { _id: action.tx.h }
       })
+    }
   } catch (e) {
-    console.error(`[!] ${txid}`)
+    console.error(`[!] ${action.tx.h}`)
     console.error(e)
   }
 }
