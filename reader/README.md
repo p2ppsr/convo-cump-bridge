@@ -68,3 +68,5 @@ When the message type is \`secret-photo\`, the content field will be an HTTP or 
 ## Implementation
 
 This protocol has been [implemented](https://github.com/p2ppsr/convo-cump-bridge) into a finite state machine using [Bridgeport](https://bridgeport.babbage.systems).
+
+It is [used in the Convo Messenger application](https://github.com/p2ppsr/convo).
